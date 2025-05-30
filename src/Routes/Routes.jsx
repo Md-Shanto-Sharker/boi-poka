@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/bookDetails/:id',
-           loader:()=>fetch('/public/bookVibe.json'),
+         loader:()=>fetch('/public/bookVibe.json'),
           Component:BookDetails,
         }
      ]
