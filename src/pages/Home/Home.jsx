@@ -5,7 +5,7 @@ import { useLoaderData } from 'react-router';
 
 const Home = () => {
     const home = useLoaderData();
-    console.log(home);
+    // console.log(home);
     return (
         <div>
             <Banner></Banner>

@@ -1,9 +1,9 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense} from "react";
 import Book from "../Book/Book";
-import { data } from "react-router";
+// import { data } from "react-router";
 
 const Books = ({ home }) => {
-  const [allBooks, setAllBooks] = useState([]);
+  // const [allBooks, setAllBooks] = useState([]);
 
   //   useEffect(() => {
   //     fetch(
@@ -13,9 +13,9 @@ const Books = ({ home }) => {
   //       .then((data) => setAllBooks(data));
   //   }, []);
 
-  const bookPromise = fetch(
-    "https://raw.githubusercontent.com/ProgrammingHero1/boi-poka-Book-Vibe-Resources/refs/heads/main/data/booksData.json"
-  ).then((res) => res.json());
+  // const bookPromise = fetch(
+  //   "https://raw.githubusercontent.com/ProgrammingHero1/boi-poka-Book-Vibe-Resources/refs/heads/main/data/booksData.json"
+  // ).then((res) => res.json());
 
   return (
     <div>
