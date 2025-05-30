@@ -4,10 +4,10 @@ import './Navbar.css'
 const Navbar = () => {
   const links = (
     <>
-      {/* <NavLink  to='/' className="mr-10 underline">Home</NavLink> */}
+     
       <NavLink  to='/' className="mr-10 ">Home</NavLink>
       <NavLink to='/about' className="mr-10">Listed Books</NavLink>
-      <li >Pages to Read</li>
+      <NavLink to='/readList' >Pages to Read</NavLink>
     </>
   );
 
