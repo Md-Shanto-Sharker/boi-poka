@@ -9,7 +9,9 @@ export const router = createBrowserRouter([
     Component: Root,
     errorElement:<Errorpage></Errorpage>,
     children: [
-      { index: true, path:'/', Component: Home },
+      { index: true,
+        loader:()=>fetch('/public/bookVibe.json'),
+        path:'/', Component: Home },
     //   { path: "about", Component: About },
     ],
   },
