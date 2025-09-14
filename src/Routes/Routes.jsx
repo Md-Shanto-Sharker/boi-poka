@@ -4,6 +4,7 @@ import Errorpage from "../Pages/Errorpage/Errorpage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import BookDetails from "../Pages/BookDetails/BookDetails";
+import ReadList from "../Pages/ReadList/ReadList";
 
 export const router = createBrowserRouter([
   {
@@ -18,9 +19,12 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       { path: "/about", Component: About },
-      { path: "/bookDetails/:id", 
+      {
+        path: "/bookDetails/:id",
         loader: () => fetch("/public/bookVibe.json"),
-        Component: BookDetails },
+        Component: BookDetails,
+      },
+      { path: "/readList", Component: ReadList },
     ],
   },
 ]);
